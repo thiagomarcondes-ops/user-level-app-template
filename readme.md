@@ -26,10 +26,10 @@ MCP server allows secure connections through OAuth and all server responses resp
 
 Get Started
 
-1. Install the latest version of HubSpot CLI using npm install -g @hubspot/cli@latest
+1. Install the latest version of HubSpot CLI using `npm install -g @hubspot/cli@latest`
 2. Clone this user level app template repository
 3. Update `user-level-app-hsmeta.json` file with your preferred app’s name, description, and redirect URI as necessary
-4. Upload the project using hs project upload
+4. Upload the project using `hs project upload`
 5. Update `user-level-app-hsmeta.json` with crm.objects.ticket.read as a required scope. Add additional scopes from the optionalScopes list below, as needed.
 
 ```json
