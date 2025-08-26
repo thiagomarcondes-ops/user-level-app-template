@@ -1,10 +1,10 @@
-HubSpot MCP Server
+# HubSpot MCP Server
 
 The HubSpot MCP Server enables you to build AI integrations for third-party systems and securely interact with HubSpot data via MCP (Model Context Protocol) protocol. This remote MCP server is hosted on HubSpot’s infrastructure available to connect,through compatible MCP clients.
 
 MCP (Model Context Protocol) is an emerging standard that allows AI models to interact with applications through a consistent interface. It acts as an abstraction layer over HTTP, letting AI agents access application functionality without needing to understand specific API protocols.
 
-Data access
+# Data access
 HubSpot MCP server allows read-only access to
 
 - contacts,
@@ -24,7 +24,7 @@ Developers are required to create user-level apps to connect with MCP server end
 
 MCP server allows secure connections through OAuth and all server responses respect authenticated user’s permissions inside HubSpot. This is enabled by creating user level apps that are mandatory to access the MCP server.
 
-Get Started
+# Get Started
 
 1. Install the latest version of HubSpot CLI using `npm install -g @hubspot/cli@latest`
 2. Clone this user level app template repository
@@ -33,7 +33,7 @@ Get Started
 5. Update `user-level-app-hsmeta.json` with crm.objects.ticket.read as a required scope. Add additional scopes from the optionalScopes list below, as needed.
 
 ```json
-"requiredScopes": [
+       "requiredScopes": [
          "crm.objects.tickets.read"
        ],
        "optionalScopes": [
