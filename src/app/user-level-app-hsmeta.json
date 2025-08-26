@@ -20,7 +20,6 @@
           "crm.objects.deals.read",
         ],
         "optionalScopes": [],
-        "conditionallyRequiredScopes": []
       },
       "permittedUrls": {
         "fetch": ["https://api.hubapi.com"],
