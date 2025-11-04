@@ -1,5 +1,5 @@
 {
-    "uid": "user-level-app-template",
+    "uid": "teste_mcp",
     "type": "app",
     "config": {
       "description": "A user level app template that can be used to connect with HubSpot MCP server",
@@ -10,18 +10,28 @@
       "auth": {
         "type" : "oauth",
         "redirectUrls": [
-          "http://localhost",
-          "http://localhost:3000/oauth-callback",
-          "https://oauth.myapplication.com/oauth-callback"
+          "http://localhost:3000/oauth-callback"
         ],
         "requiredScopes": [
           "oauth",
           "crm.objects.contacts.read",
           "crm.objects.companies.read",
-          "crm.objects.deals.read"
+          "crm.objects.deals.read",
+          "crm.objects.tickets.read"
+
         ],
-        "optionalScopes": []
-      },
+        "optionalScopes": [
+         "crm.objects.users.read",
+         "crm.objects.owners.read",
+         "crm.objects.carts.read",
+         "crm.objects.products.read",
+         "crm.objects.orders.read",
+         "crm.objects.invoices.read",
+         "crm.objects.quotes.read",
+         "crm.objects.line_items.read",
+         "crm.objects.subscriptions.read"
+       ]
+            },
       "permittedUrls": {
         "fetch": ["https://api.hubapi.com"],
         "iframe": [],
